@@ -67,7 +67,7 @@ class Apollo
     {
         if (null !== $baseUri) {
             $options = array_merge($this->httpClientOptions, $options, [
-                'base_uri' => $baseUri,
+                'base_uri' => rtrim($baseUri, '/') . '/',
             ]);
 
             $this->httpClient = new Client($options);
