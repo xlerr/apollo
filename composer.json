@@ -1,0 +1,26 @@
+{
+  "name": "kuainiu/apollo",
+  "type": "library",
+  "authors": [
+    {
+      "name": "xlerr",
+      "email": "xlerr@qq.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "apollo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "apollo\\test\\": "test/"
+    }
+  }
+}
